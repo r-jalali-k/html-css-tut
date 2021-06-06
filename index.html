@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The crash course 2012</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Remember<span>That</span></a>
+
+            <img id='mobile-menu' src="./images/menu.svg" alt="" class="mobile-menu">
+
+            <nav>
+                <img id='mobile-menu-close' src="./images/close.png" alt="" class="mobile-menu-close">
+
+                <ul class="primary-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Does Not Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="./images/camera.svg" alt="">
+                        Watch a video
+                    </a>
+                </div>
+            </div>
+            <img src="./images/hero.png" alt="" class="hero-image">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul>
+                <li>Unlimeted Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Real Time Collaboration</li>
+                <li>And Other Awesome Features</li>
+            </ul>
+
+            <img src="images/iphone.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/avatar.jpg" alt="">
+                    <blockquote>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mollis dui, eget vehicula
+                        nisi. Integer pretium volutpat semper."
+                    </blockquote>
+                    <cite>
+                        - John Tomas
+                    </cite>
+                </li>
+                <li>
+                    <img src="images/avatar.jpg" alt="">
+                    <blockquote>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mollis dui, eget vehicula
+                        nisi. Integer pretium volutpat semper."
+                    </blockquote>
+                    <cite>
+                        - John Tomas
+                    </cite>
+                </li>
+                <li>
+                    <img src="images/avatar.jpg" alt="">
+                    <blockquote>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget mollis dui, eget vehicula
+                        nisi. Integer pretium volutpat semper."
+                    </blockquote>
+                    <cite>
+                        - John Tomas
+                    </cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+<script>
+    const mobileBtn = document.getElementById('mobile-menu')
+    const mobileBtnClose = document.getElementById('mobile-menu-close')
+    const nav = document.querySelector('nav');
+
+    mobileBtn.addEventListener('click', () => {
+        nav.classList.add('menu-btn')
+        console.log(nav.classList)
+    })
+
+    mobileBtnClose.addEventListener('click', () => {
+        nav.classList.remove('menu-btn')
+    })
+</script>
+
+</html>
